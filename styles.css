@@ -1,0 +1,157 @@
+/* Importar la fuente VT323, similar a las de la programación de los años 80s */
+body {
+  margin: 0;
+  font-family: WorkSans-Thin;
+  background-color: rgb(255, 255, 255);
+  color: rgb(1, 1, 1);
+}
+
+/* Menú de navegación horizontal */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#nombre {
+  font-family: SourceSerif4_18pt-Black;
+  display: flex;
+  font-size: 75px;
+  position: relative;
+  top: 80px;
+  justify-content: center;
+}
+#foto {
+  display: flex;
+  justify-content: center;
+}
+#bio-section {
+  position: relative;
+  bottom: 90px;
+  line-height: 1.8;
+}
+#bio-letra {
+  font-family: SourceSerif4_18pt-Black;
+}
+#research {
+  line-height: 1.8;
+}
+
+.mosaico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px; /* Espacio entre las imágenes */
+  justify-content: center;
+}
+
+.mosaico img,
+.mosaico video {
+  max-width: 100%;
+  display: block;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+
+#menu-options {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-options li {
+  margin-right: 0px;
+}
+
+#menu-options li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#menu-options li a:hover {
+  color: #ff9800;
+}
+
+#diagrama-SJC {
+  display: flex;
+  justify-content: center;
+}
+/* Logo centrado */
+.centered-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 1000px;
+}
+
+/* Contenido principal */
+.content {
+  padding: 20px;
+  margin-top: 80px; /* Añadimos margen superior para evitar que el contenido se oculte detrás del navbar */
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+/* Sección de proyectos con subsecciones */
+section h3 {
+  margin-top: 40px;
+}
+
+section img,
+section video {
+  display: block;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu-options {
+    flex-direction: column;
+    display: none;
+  }
+
+  #menu-options li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Modal con carrusel tipo slider */
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
