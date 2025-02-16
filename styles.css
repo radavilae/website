@@ -4,6 +4,7 @@ body {
   font-family: WorkSans-Thin;
   background-color: rgb(255, 255, 255);
   color: rgb(1, 1, 1);
+  line-height: 1.6;
 }
 
 /* Menú de navegación horizontal */
@@ -31,7 +32,23 @@ body {
 #foto {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  height: 120vh;
 }
+
+.video-background {
+  top: 150%; /* Ajusta este valor según necesites */
+  left: 50%;
+  width: 150vw;
+  height: 120vh;
+}
+
+section {
+  max-width: 900px; /* Limita el ancho del contenido */
+  margin: 50px auto; /* Centra la sección en la pantalla */
+  padding: 20px;
+}
+
 #bio-section {
   position: relative;
   bottom: 90px;
@@ -40,28 +57,27 @@ body {
 #bio-letra {
   font-family: SourceSerif4_18pt-Black;
 }
+
 #research {
   line-height: 1.8;
+  position: relative;
+  top: 5px; /* Ajusta según necesites */
+  left: 0%; /* Si deseas mantener este ajuste */
 }
 
-.mosaico {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px; /* Espacio entre las imágenes */
-  justify-content: center;
+#proyectos {
+  line-height: 1.8;
+  position: relative;
+  top: 50px; /* Ajusta según necesites */
+  left: 0%; /* Si deseas mantener este ajuste */
 }
 
-.mosaico img,
-.mosaico video {
-  max-width: 100%;
-  display: block;
-}
-
-.menu-icon {
-  font-size: 30px;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  text-align: right;
+#contact {
+  line-height: 1.8;
+  position: relative;
+  top: 100px; /* Ajusta según necesites */
+  left: 0%; /* Si deseas mantener este ajuste */
+  margin-bottom: 250px;
 }
 
 #menu-options {
@@ -72,7 +88,7 @@ body {
 }
 
 #menu-options li {
-  margin-right: 0px;
+  margin-right: 10px;
 }
 
 #menu-options li a {
@@ -84,45 +100,8 @@ body {
   color: #ff9800;
 }
 
-#diagrama-SJC {
-  display: flex;
-  justify-content: center;
-}
-/* Logo centrado */
-.centered-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+/*Responsividad ****/
 
-.logo {
-  max-width: 1000px;
-}
-
-/* Contenido principal */
-.content {
-  padding: 20px;
-  margin-top: 80px; /* Añadimos margen superior para evitar que el contenido se oculte detrás del navbar */
-}
-
-section {
-  margin-bottom: 80px;
-}
-
-/* Sección de proyectos con subsecciones */
-section h3 {
-  margin-top: 40px;
-}
-
-section img,
-section video {
-  display: block;
-  margin: 20px 0;
-  max-width: 100%;
-}
-
-/* Responsividad */
 @media (max-width: 768px) {
   #navbar {
     flex-direction: column;
@@ -137,41 +116,4 @@ section video {
   #menu-options li {
     margin: 10px 0;
   }
-
-  .menu-icon {
-    margin-bottom: 10px;
-  }
-
-  .content {
-    padding: 10px;
-  }
-}
-
-/* Modal con carrusel tipo slider */
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0px;
-}
-
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
 }
