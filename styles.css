@@ -69,14 +69,14 @@ section {
   margin: 50px auto; /* Centra la sección en la pantalla */
   padding: 20px;
 }
-
+/* 
 .video-background {
   position: relative;
-  top: 100%; /* Ajusta este valor según necesites */
+  top: 100%; 
   left: 0%;
   width: 150vw;
   height: 120vh;
-}
+} */
 
 /* Sección BIO */
 
