@@ -80,7 +80,7 @@ section {
 
 /* Sección BIO */
 
-#bio-section {
+#bio {
   position: relative;
   bottom: 90px;
   line-height: 1.8;
@@ -96,7 +96,7 @@ section {
   left: 0%; /* Si deseas mantener este ajuste */
 }
 
-#proyectos {
+#projects {
   line-height: 1.8;
   position: relative;
   bottom: 300px; /* Ajusta según necesites */
