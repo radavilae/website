@@ -84,6 +84,8 @@ section {
   position: relative;
   bottom: 90px;
   line-height: 1.8;
+  pointer-events: auto;
+  z-index: 1;
 }
 #bio-letra {
   font-family: SourceSerif4_18pt-Black;
