@@ -60,6 +60,8 @@ body {
   justify-content: center;
   width: 100vw;
   height: 120vh;
+  margin-top: 150px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 150px; /* Ajusta el valor según el espacio deseado */
 }
 
 /* Estilos generales de secciones */
@@ -86,7 +88,19 @@ section {
   line-height: 1.8;
   pointer-events: auto;
   z-index: 1;
+  margin-top: 20px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 0px; /* Ajusta el valor según el espacio deseado */
 }
+
+#biotwo {
+  position: relative;
+  bottom: 90px;
+  line-height: 1.8;
+  pointer-events: auto;
+  z-index: 1;
+  margin-top: -20px; /* Ajusta el valor según el espacio deseado */
+}
+
 #bio-letra {
   font-family: SourceSerif4_18pt-Black;
 }
