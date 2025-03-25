@@ -115,14 +115,14 @@ section {
 #projects {
   line-height: 1.8;
   position: relative;
-  bottom: 300px; /* Ajusta según necesites */
+  bottom: 200px; /* Ajusta según necesites */
   left: 0%; /* Si deseas mantener este ajuste */
 }
 
 #contact {
   line-height: 1.8;
   position: relative;
-  bottom: 300px; /* Ajusta según necesites */
+  bottom: 250px; /* Ajusta según necesites */
   left: 0%; /* Si deseas mantener este ajuste */
   margin-bottom: 0px;
 }
